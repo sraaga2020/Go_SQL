@@ -15,7 +15,7 @@ type Task struct {
 }
 
 func main() {
-	connStr := "postgres://pqgotest:secret@localhost:8080/gopgtest?sslmode=disable"
+	connStr := "postgres://pqgotest:secret@localhost:5432/gopgtest?sslmode=disable"
 
 	db, err := sql.Open("postgres", connStr)
 	if err != nil {
